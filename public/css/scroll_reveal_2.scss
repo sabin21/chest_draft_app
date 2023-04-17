@@ -1,0 +1,172 @@
+@import 'normalize.css';
+@import 'bootstrap_grid';
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
+//------------------------
+
+$headerHeight1 : 220px;
+$headerHeight2 : 90px;
+$footerHeight : 200px;
+$maxWidth1: 1380px;
+
+//------------------------
+body{
+  font-family: 'pretendard'; color:#383838; overflow-x: hidden;
+}
+.body-wrap { position: relative; min-height: 100vh; }
+
+//------------------------
+
+.header-wrap{
+  width:100%; height: $headerHeight1; position: fixed; display: flex;
+  justify-content: center; margin: auto;
+  background-color: rgba(255,255,255,.0); z-index: 9000;
+  transition: all 0.5s; backdrop-filter: blur(12px);
+  header {
+    position: absolute; width:100%; max-width: $maxWidth1; height: 100%;
+    margin: auto; display: flex; 
+    // border:solid red 1px;
+    .logo {
+      display: block; position: absolute; width: 190px; height: 46px; top:60px;
+      margin: auto; left:calc(50% - 80px);
+      background-repeat: no-repeat; background-size: contain;
+      background-image: url(../../public/chest/img/logo_default.png);  
+      transition: all 0.5s; 
+    }
+    .menu-bar{
+      position: absolute; width: 1000px;
+      top:140px; left:calc(50% - 600px); transition: all 0.5s; 
+      ul { width: 100%; display: flex; justify-content: center; }
+      .menu-item{
+        a{
+          display: block; width: 150px; text-align: center;
+          font-weight: 700; font-size: 20px; color:#383838;
+        }
+      }          
+    }
+  }
+  &.active {
+    height: $headerHeight2;
+    background-color: rgba(255,255,255,0.8);
+    
+    header{
+      .logo{ 
+        left: 40px; width:40px; top:16px;
+        background-size: cover; 
+      }
+      .menu-bar{
+        top: 16px; 
+      }
+    }  
+  }
+}
+
+//------------------------
+
+.page-back-color{
+  display: block; position: fixed; width: 100vw; height:100vh;
+  top:0; left:0; z-index: -1;
+  background-color: #ffffff;
+}
+
+.section { 
+  position: relative; min-height: 100vh; display: flex; align-items: center;
+  &.section-2{
+    top:300px; 
+    // border: solid 1px;
+  }
+}
+
+//------------------------
+.section-campaign-card {
+  height:900px; min-height: 900px; top: 140px;
+  .inner-wrap{
+    position: relative; min-width:100vw; width:3900px; top:100px; height: 720px; display: flex;
+    margin-left: 100px;
+    // border: solid red 1px;
+  }
+}
+.campaign-card-wrap {
+  position: relative; width:100%; max-width: 780px; height:100%; max-height:720px;
+  margin-left: 120px;
+  > .title-wrap{
+    width:520px; position: absolute; top: 100px; left:0; z-index: 2;
+    h1{
+      font-size: 90px; color:#1f1f1f; line-height: 1.1em; font-weight: 800;
+    }
+  }
+  > .image-wrap {
+    position: absolute; width: 590px; height:720px; left: 190px;
+    overflow: hidden; background-color: gray;
+    .card-image {
+      position: absolute; width:730px; height: 100%; left:-140px;
+      background-size: cover; background-repeat: no-repeat;
+      &.card-1 { background-image:url(../../public/chest/img/campaign_1_cover.jpg); }
+      &.card-2 { background-image:url(../../public/chest/img/campaign_2_cover.jpg); }
+      &.card-3 { background-image:url(../../public/chest/img/campaign_3_cover.jpg); }
+    }
+  }
+}
+
+//------------------------
+
+.reveal-img {
+  visibility: hidden; position: relative; width: 100%; height: 500px;
+  overflow: hidden;
+  img {
+    height: 100%; width: 100%; object-fit: cover; transform-origin: left;
+  }
+}
+.reveal-text { visibility: hidden; margin:0; }
+.line { position: relative; overflow: hidden; display: flex; }
+//--------------------------
+
+.redball-wrap{
+  display: block; position: fixed;
+  width:800px; height: 800px; left:-100px; top:-100px;
+  transform-origin: 50% 50%;
+  animation: redballRotation 20s infinite linear; 
+}
+.redball {
+  position: absolute; width: 500px; height: 500px; border-radius: 50%;
+  background: radial-gradient(ellipse at center, rgba(250,51,51,0.8) 0%,rgba(250,51,51,0) 60%);
+  mix-blend-mode: multiply;
+  &.redball-1{ 
+    top: 0px; left:160px; 
+    // animation: redballScale 30s infinite linear;
+    // background: radial-gradient(ellipse at center, rgba(255,138,0,1.0) 0%,rgba(250,51,51,0) 60%);
+  }
+  &.redball-2{ top: 260px; left:300px; }
+  &.redball-3{ 
+    top: 260px; left:0px; 
+  }
+}
+@keyframes redballRotation {
+  0%{ transform: rotate(0deg);}
+  100%{ transform: rotate(360deg);}
+}
+@keyframes redballScale {
+  0%{ transform: scale(1.0);}
+  50%{ transform: scale(0.6);}
+  100%{ transform: scale(1.0);}
+}
+//--------------------------
+
+
+//--------------------------
+
+.section-pin {
+  overflow: hidden; display: flex; left: 0;
+  .pin-wrap{
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 50px 10vw;
+
+    .card-wrap{
+      width: 400px; height: 400px; background-color: black; 
+      margin: 0 16px;
+    }
+  }
+}

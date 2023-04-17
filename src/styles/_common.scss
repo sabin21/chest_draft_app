@@ -1,0 +1,14 @@
+
+@import "variables";
+@import "reboot";
+@import "mixins";
+
+// Template Style
+.info-frame {
+    position: fixed; width:auto; z-index: 99999;
+    background-color: rgba(0,0,0,0.8);
+    padding: 1rem; 
+    a{ 
+      display: inline-block; color:#fff; margin:0 0.5rem; 
+    } 
+  }

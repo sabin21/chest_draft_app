@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Draft</title> 
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico" defer="">
+  <!-- <link rel="stylesheet" href="./css/app_common.build.css"> -->
+</head>
+
+<body>
+<div class="body-wrap">
+
+  <div class="header-wrap">
+    <header>
+        <a class="logo" href=""></a>
+        <nav class="menu-bar">
+            <ul>
+              <li class="menu-item active"><a href="">캠페인</a></li>
+              <li class="menu-item">
+                <a href="">기부</a>
+                <ul class="gnb-menu-sub">
+                  <li class="menu-item-2nd"><a href="">정기기부</a></li>
+                  <li class="menu-item-2nd"><a href="">일시기부</a></li>
+                  <li class="menu-item-2nd"><a href="">기부참여방법</a></li>
+                  <li class="menu-item-2nd"><a href="">기업사회공헌</a></li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <a href="">나눔플랫폼</a>
+                <ul class="gnb-menu-sub">
+                  <li class="menu-item-2nd"><a href="">정기기부</a></li>
+                  <li class="menu-item-2nd"><a href="">일시기부</a></li>
+                  <li class="menu-item-2nd"><a href="">기부참여방법</a></li>
+                  <li class="menu-item-2nd"><a href="">기업사회공헌</a></li>
+                </ul>
+              </li>
+              <li class="menu-item"><a href="">홍보</a></li>
+              <li class="menu-item"><a href="">신뢰와 투명성</a></li>
+              <li class="menu-item"><a href="">소개</a></li>
+            </ul>
+        </nav>
+        <div class="header-util-wrap">
+          <button class="btn-region"></button>
+          <button class="btn btn-search">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="btn-fill" d="M30.3744 31.7886C30.7649 32.1791 31.3981 32.1791 31.7886 31.7886C32.1791 31.3981 32.1791 30.7649 31.7886 30.3744L30.3744 31.7886ZM24.364 11.636C27.8787 15.1508 27.8787 20.8492 24.364 24.364L25.7782 25.7782C30.0739 21.4824 30.0739 14.5176 25.7782 10.2218L24.364 11.636ZM24.364 24.364C20.8492 27.8787 15.1508 27.8787 11.636 24.364L10.2218 25.7782C14.5176 30.0739 21.4824 30.0739 25.7782 25.7782L24.364 24.364ZM11.636 24.364C8.12132 20.8492 8.12132 15.1508 11.636 11.636L10.2218 10.2218C5.92606 14.5176 5.92606 21.4824 10.2218 25.7782L11.636 24.364ZM11.636 11.636C15.1508 8.12132 20.8492 8.12132 24.364 11.636L25.7782 10.2218C21.4824 5.92606 14.5176 5.92606 10.2218 10.2218L11.636 11.636ZM31.7886 30.3744L25.4246 24.0104L24.0104 25.4246L30.3744 31.7886L31.7886 30.3744Z" fill="#1F2937"/>
+            </svg>
+          </button>
+          <button class="btn">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="btn-stroke" d="M5 8H35" stroke="#121212" stroke-width="2" stroke-linecap="round"/>
+              <path class="btn-stroke" d="M5 32H35" stroke="#121212" stroke-width="2" stroke-linecap="round"/>
+              <path class="btn-stroke" d="M5 20H27" stroke="#121212" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </div>
+        <button class="btn-donate">
+          <img src="./img/btn_donate.svg" class="img-donate">
+          <img src="./img/gnb_donate_close.svg" class="icon-close">
+        </button>
+    </header>
+
+    <div class="gnb-donate-wrap">
+      <div class="sns-link-wrap">
+        <a href="">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23 9.70998C23.0494 8.27864 22.7364 6.858 22.09 5.57998C21.6514 5.05558 21.0427 4.70169 20.37 4.57998C17.5875 4.32751 14.7935 4.22403 12 4.26998C9.21664 4.22194 6.43271 4.32208 3.66 4.56998C3.11182 4.6697 2.60452 4.92683 2.2 5.30998C1.3 6.13998 1.2 7.55998 1.1 8.75998C0.954912 10.9175 0.954912 13.0824 1.1 15.24C1.12893 15.9154 1.22949 16.5858 1.4 17.24C1.52058 17.745 1.76452 18.2123 2.11 18.6C2.51727 19.0034 3.03638 19.2752 3.6 19.38C5.75592 19.6461 7.92822 19.7564 10.1 19.71C13.6 19.76 16.67 19.71 20.3 19.43C20.8775 19.3316 21.4112 19.0595 21.83 18.65C22.11 18.3699 22.3191 18.0271 22.44 17.65C22.7976 16.5526 22.9733 15.4041 22.96 14.25C23 13.69 23 10.31 23 9.70998ZM9.74 14.85V8.65998L15.66 11.77C14 12.69 11.81 13.73 9.74 14.85Z" fill="#1F2937"/>
+          </svg>
+        </a>
+        <a href="">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.0401 7.43838C14.0401 7.43838 12.1941 7.43838 10.5184 9.0295V2.625H6.375V19.4534H10.5594V18.1362C10.5594 18.1362 11.5472 19.875 14.037 19.875C14.037 19.875 19.875 19.6657 19.875 13.5936C19.875 13.5936 19.6604 7.43838 14.037 7.43838H14.0401ZM13.1282 16.3204C11.6576 16.3204 10.4648 15.157 10.4648 13.7229C10.4648 12.2887 11.6576 11.1284 13.1282 11.1284C14.5987 11.1284 15.7884 12.2918 15.7884 13.7229C15.7884 15.1539 14.5955 16.3204 13.1282 16.3204V16.3204Z" fill="#1F2937"/>
+          </svg>
+        </a>
+        <a href="">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15.12 5.32003H17V2.14003C16.0898 2.04538 15.1752 1.99865 14.26 2.00003C11.54 2.00003 9.68 3.66003 9.68 6.70003V9.32003H6.61V12.88H9.68V22H13.36V12.88H16.42L16.88 9.32003H13.36V7.05003C13.36 6.00003 13.64 5.32003 15.12 5.32003Z" fill="#1F2937"/>
+          </svg>
+        </a>
+        <a href="">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.34 5.46C17.1027 5.46 16.8707 5.53038 16.6733 5.66224C16.476 5.79409 16.3222 5.98151 16.2313 6.20078C16.1405 6.42005 16.1168 6.66133 16.1631 6.89411C16.2094 7.12689 16.3236 7.34071 16.4915 7.50853C16.6593 7.67635 16.8731 7.79064 17.1059 7.83694C17.3387 7.88324 17.5799 7.85948 17.7992 7.76866C18.0185 7.67783 18.2059 7.52402 18.3378 7.32668C18.4696 7.12935 18.54 6.89734 18.54 6.66C18.54 6.34174 18.4136 6.03652 18.1885 5.81147C17.9635 5.58643 17.6583 5.46 17.34 5.46V5.46ZM21.94 7.88C21.9206 7.0503 21.7652 6.2294 21.48 5.45C21.2257 4.78313 20.83 4.17928 20.32 3.68C19.8248 3.16743 19.2196 2.77418 18.55 2.53C17.7727 2.23616 16.9508 2.07721 16.12 2.06C15.06 2 14.72 2 12 2C9.28 2 8.94 2 7.88 2.06C7.04915 2.07721 6.22734 2.23616 5.45 2.53C4.78168 2.77665 4.17693 3.16956 3.68 3.68C3.16743 4.17518 2.77418 4.78044 2.53 5.45C2.23616 6.22734 2.07721 7.04915 2.06 7.88C2 8.94 2 9.28 2 12C2 14.72 2 15.06 2.06 16.12C2.07721 16.9508 2.23616 17.7727 2.53 18.55C2.77418 19.2196 3.16743 19.8248 3.68 20.32C4.17693 20.8304 4.78168 21.2234 5.45 21.47C6.22734 21.7638 7.04915 21.9228 7.88 21.94C8.94 22 9.28 22 12 22C14.72 22 15.06 22 16.12 21.94C16.9508 21.9228 17.7727 21.7638 18.55 21.47C19.2196 21.2258 19.8248 20.8326 20.32 20.32C20.8322 19.8226 21.2283 19.2182 21.48 18.55C21.7652 17.7706 21.9206 16.9497 21.94 16.12C21.94 15.06 22 14.72 22 12C22 9.28 22 8.94 21.94 7.88V7.88ZM20.14 16C20.1327 16.6348 20.0178 17.2637 19.8 17.86C19.6403 18.2952 19.3839 18.6884 19.05 19.01C18.7256 19.3405 18.3332 19.5964 17.9 19.76C17.3037 19.9778 16.6748 20.0927 16.04 20.1C15.04 20.15 14.67 20.16 12.04 20.16C9.41 20.16 9.04 20.16 8.04 20.1C7.38089 20.1123 6.72459 20.0109 6.1 19.8C5.68578 19.6281 5.31136 19.3728 5 19.05C4.66809 18.7287 4.41484 18.3352 4.26 17.9C4.01586 17.2952 3.88044 16.6519 3.86 16C3.86 15 3.8 14.63 3.8 12C3.8 9.37 3.8 9 3.86 8C3.86448 7.35106 3.98295 6.70795 4.21 6.1C4.38605 5.67791 4.65626 5.30166 5 5C5.30381 4.65617 5.67929 4.3831 6.1 4.2C6.70955 3.98004 7.352 3.86508 8 3.86C9 3.86 9.37 3.8 12 3.8C14.63 3.8 15 3.8 16 3.86C16.6348 3.86728 17.2637 3.98225 17.86 4.2C18.3144 4.36865 18.7223 4.64285 19.05 5C19.3777 5.30718 19.6338 5.68273 19.8 6.1C20.0223 6.70893 20.1373 7.35178 20.14 8C20.19 9 20.2 9.37 20.2 12C20.2 14.63 20.19 15 20.14 16ZM12 6.87C10.9858 6.87198 9.99496 7.17453 9.15265 7.73942C8.31035 8.30431 7.65438 9.1062 7.26763 10.0438C6.88089 10.9813 6.78072 12.0125 6.97979 13.0069C7.17886 14.0014 7.66824 14.9145 8.38608 15.631C9.10392 16.3474 10.018 16.835 11.0129 17.0321C12.0077 17.2293 13.0387 17.1271 13.9755 16.7385C14.9123 16.35 15.7129 15.6924 16.2761 14.849C16.8394 14.0056 17.14 13.0142 17.14 12C17.1413 11.3251 17.0092 10.6566 16.7512 10.033C16.4933 9.40931 16.1146 8.84281 15.6369 8.36605C15.1592 7.88929 14.5919 7.51168 13.9678 7.25493C13.3436 6.99818 12.6749 6.86736 12 6.87V6.87ZM12 15.33C11.3414 15.33 10.6976 15.1347 10.15 14.7688C9.60234 14.4029 9.17552 13.8828 8.92348 13.2743C8.67144 12.6659 8.6055 11.9963 8.73398 11.3503C8.86247 10.7044 9.17963 10.111 9.64533 9.64533C10.111 9.17963 10.7044 8.86247 11.3503 8.73398C11.9963 8.6055 12.6659 8.67144 13.2743 8.92348C13.8828 9.17552 14.4029 9.60234 14.7688 10.15C15.1347 10.6976 15.33 11.3414 15.33 12C15.33 12.4373 15.2439 12.8703 15.0765 13.2743C14.9092 13.6784 14.6639 14.0454 14.3547 14.3547C14.0454 14.6639 13.6784 14.9092 13.2743 15.0765C12.8703 15.2439 12.4373 15.33 12 15.33V15.33Z" fill="#1F2937"/>
+          </svg>
+        </a>
+      </div>
+      <img src="./img/gnb_donate_menu.png" class="donate-menu">
+      <img src="./img/qrcode.png" class="qrcode">
+    </div>
+    
+  </div>
+
+  <span class="page-back-color"></span>
+  <span class="redball-wrap">
+    <div class="redball redball-1"></div>
+    <div class="redball redball-2"></div>
+    <div class="redball redball-3"></div>
+  </span>
+
+  <section class="section-big-card section-pin">
+    <div class="pin-wrap big-card-pin-wrap">
+    <div class="inner-wrap big-card-inner">
+
+      <div class="big-card-wrap">
+        <div class="image-wrap">
+          <div class="card-image card-1"></div>
+          <!-- <span class="reveal-fill">
+            <span class="fill-1"></span>
+          </span> -->
+        </div>
+        <div class="title-outer">
+          <div class="title-wrap">
+            <h1>희망나눔</h1>
+            <h1>캠페인</h1>
+          </div>
+        </div>
+        <a href="" class="btn-big-card-more">
+          <span>상세보기</span>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.25 6L16.25 12L10.25 18" stroke="#1F2937" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="big-card-wrap">
+        <div class="image-wrap">
+          <div class="card-image card-2"></div>
+          <!-- <span class="reveal-fill">
+            <span class="fill-1"></span>
+          </span> -->
+        </div>
+        <a href="" class="btn-big-card-more">
+          <span>상세보기</span>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.25 6L16.25 12L10.25 18" stroke="#1F2937" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="big-card-wrap">
+        <div class="image-wrap">
+          <div class="card-image card-3"></div>
+          <!-- <span class="reveal-fill">
+            <span class="fill-1"></span>
+          </span> -->
+        </div>
+        <a href="" class="btn-big-card-more">
+          <span>상세보기</span>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.25 6L16.25 12L10.25 18" stroke="#1F2937" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="big-card-wrap">
+        <div class="image-wrap">
+          <div class="card-image card-4"></div>
+          <!-- <span class="reveal-fill">
+            <span class="fill-1"></span>
+          </span> -->
+        </div>
+        <a href="" class="btn-big-card-more">
+          <span>상세보기</span>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.25 6L16.25 12L10.25 18" stroke="#1F2937" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="big-card-wrap">
+        <div class="image-wrap">
+          <div class="card-image card-5"></div>
+          <!-- <span class="reveal-fill">
+            <span class="fill-1"></span>
+          </span> -->
+        </div>
+        <a href="" class="btn-big-card-more">
+          <span>상세보기</span>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.25 6L16.25 12L10.25 18" stroke="#1F2937" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+  </section>
+
+  <section class="section-video">
+    <div class="video-mask">
+      <div class="video-wrap">
+        <video src="./chest/funding_intro.mp4" muted autoplay loop></video>
+      </div>
+    </div>
+    <div class="headline-wrap">
+      <div class="quote">
+        <h2 class="reveal-text">
+          여러분의 힘으로 긍정적인 변화를 만들어갑니다
+        </h2>
+        
+      </div>
+    </div>
+  </section>
+  
+  <section class="section-current">
+    <div class="pin-wrap pin-wrap2">
+      <div class="inner-wrap">
+
+        <div class="card-fund-wrap">
+            <div class="back-img">
+              <img src="./img/fund_card_1_back.png" alt="">
+            </div>
+            <div class="title-wrap">
+              <h3>학교폭력 예방을 위한 청소년 뮤지컬</h3>
+            </div>
+            <a href="" class="btn-more">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.25 6L16.25 12L10.25 18" stroke="#1F2937" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </a>
+        </div>
+
+        <div class="campaign-card-wrap card-2">
+          <a href="" class="btn-big-card-more">
+            <span>상세보기</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.25 6L16.25 12L10.25 18" stroke="#1F2937" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="card-fund-wrap">
+            <div class="back-img">
+              <img src="./img/fund_card_2_back.png" alt="">
+            </div>
+            <div class="title-wrap">
+              <h3>학교폭력 예방을 위한 청소년 뮤지컬</h3>
+            </div>
+            <a href="" class="btn-more">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.25 6L16.25 12L10.25 18" stroke="#1F2937" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </a>
+        </div>
+
+        <div class="card-fund-wrap">
+            <div class="back-img">
+              <img src="./img/fund_card_3_back.png" alt="">
+            </div>
+            <div class="title-wrap">
+              <h3>학교폭력 예방을 위한 청소년 뮤지컬</h3>
+            </div>
+            <a href="" class="btn-more">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.25 6L16.25 12L10.25 18" stroke="#1F2937" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </a>
+        </div>
+
+        <div class="campaign-card-wrap card-1">
+          <a href="" class="btn-big-card-more">
+            <span>상세보기</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.25 6L16.25 12L10.25 18" stroke="#1F2937" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="card-fund-wrap">
+            <div class="back-img">
+              <img src="./img/fund_card_4_back.png" alt="">
+            </div>
+            <div class="title-wrap">
+              <h3>학교폭력 예방을 위한 청소년 뮤지컬</h3>
+            </div>
+            <a href="" class="btn-more">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.25 6L16.25 12L10.25 18" stroke="#1F2937" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </a>
+        </div>
+
+        <div class="card-fund-wrap">
+            <div class="back-img">
+              <img src="./img/fund_card_5_back.png" alt="">
+            </div>
+            <div class="title-wrap">
+              <h3>학교폭력 예방을 위한 청소년 뮤지컬</h3>
+            </div>
+            <a href="" class="btn-more">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.25 6L16.25 12L10.25 18" stroke="#1F2937" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </a>
+        </div>
+
+        <div class="campaign-card-wrap card-2">
+          <a href="" class="btn-big-card-more">
+            <span>상세보기</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.25 6L16.25 12L10.25 18" stroke="#1F2937" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-fin">
+    <img src="./img/fund_fin_1.png" class="full-img">
+  </section>
+
+  <button class="btn-page-top">
+    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M22.75 11.375L13 1.625L3.25 11.375" stroke="#1F2937" stroke-linecap="round"/>
+      <path d="M13 1.625V24.375" stroke="#1F2937" stroke-linecap="round"/>
+      <path d="M3.25 24.375H22.75" stroke="#1F2937" stroke-linecap="round"/>
+    </svg>
+  </button>
+
+  <footer class="footer">
+
+  </footer>
+</div><!-- body-wrap -->
+
+<!-- <script defer src="./js/app_common.bundle.js"></script> -->
+</body>
+</html>

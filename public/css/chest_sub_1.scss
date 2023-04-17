@@ -1,0 +1,120 @@
+@import 'normalize.css';
+@import 'bootstrap_grid';
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
+@import 'header.scss';
+
+//------------------------
+body{
+  font-family: 'pretendard'; color:#383838; overflow-x: hidden;
+}
+.body-wrap { position: relative; min-height: 100vh; }
+
+//------------------------
+
+//------------------------
+
+.page-back-color{
+  display: block; position: fixed; width: 100vw; height:100vh;
+  top:0; left:0; z-index: -1;
+  background-color: #ffffff;
+}
+
+.section { 
+  position: relative; min-height: 100vh; display: flex; 
+}
+
+//------------------------
+
+.section-hero{
+  position: relative; width:100%; height: 100vh; overflow: hidden;
+  .video-wrap {
+    position: absolute; width:100%; height:100%; top:0; left:0;
+    video{
+      width:100%; height:100%; object-fit: cover;
+    }
+    &::after{
+      content:''; display: block; position: absolute; z-index: 2;
+      width:100%; height: 100%; top:0; left:0;
+      background: rgba(0,0,0,0.2);
+    }
+  }
+  &::after{
+    content:''; display: block; position: absolute; z-index: 2;
+    width:100%; height: 240px; top:0; left:0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.6) 40%,rgba(0,0,0,0) 100%);
+  }
+  .headline-wrap{
+    position: absolute; z-index: 10; width: 1108px; bottom: 160px; left:calc(50% - 600px);
+    img { max-width: 100%;}
+  }
+  .local-banner{
+    position: absolute; width:370px; height: 278px;
+    bottom:0; right:0; z-index: 10;
+  }
+}
+
+.section-2 {
+  width:100%; display: flex; justify-content: center; align-items: center;
+  margin: 200px auto;
+  .con-full {
+    width:100%; max-width: 1336px;
+  }
+  
+}
+.section-video{
+  position: relative; width: 100%; height: 680px; margin-bottom: 140px;
+  margin-top: 50px; display: flex; justify-content: center; align-items: center;
+  .video-wrap {
+    position: absolute; width:100%; height:100%; top:0; left:0;
+    video{ width:100%; height:100%; object-fit: cover; }
+    &::after{
+      content:''; display: block; position: absolute; z-index: 2;
+      width:100%; height: 100%; top:0; left:0;
+      background: rgba(0,0,0,0.2);
+    }
+  }
+  .headline-wrap{
+    width: 640px; position: absolute; top: 260px; z-index: 10;
+    h2 {
+      color:#ffffff; text-align: center; font-size: 52px;
+      font-weight: bold; word-break: keep-all;
+    }
+    
+  }
+}
+.section-4 {
+  display: flex; justify-content: center; margin-bottom: 200px;
+}
+//------------------------
+.section-campaign-card {
+  height:900px; min-height: 900px; top: 140px;
+  .inner-wrap{
+    position: relative; min-width:100vw; width:3900px; top:100px; height: 720px; display: flex;
+    margin-left: 100px;
+    // border: solid red 1px;
+  }
+}
+.campaign-card-wrap {
+  position: relative; width:100%; max-width: 780px; height:100%; max-height:720px;
+  margin-left: 120px;
+  > .title-wrap{
+    width:520px; position: absolute; top: 100px; left:0; z-index: 2;
+    h1{
+      font-size: 90px; color:#1f1f1f; line-height: 1.1em; font-weight: 800;
+    }
+  }
+  > .image-wrap {
+    position: absolute; width: 590px; height:720px; left: 190px;
+    overflow: hidden; background-color: gray;
+    .card-image {
+      position: absolute; width:730px; height: 100%; left:-140px;
+      background-size: cover; background-repeat: no-repeat;
+      &.card-1 { background-image:url(../../public/chest/img/campaign_1_cover.jpg); }
+      &.card-2 { background-image:url(../../public/chest/img/campaign_2_cover.jpg); }
+      &.card-3 { background-image:url(../../public/chest/img/campaign_3_cover.jpg); }
+    }
+  }
+}
+
+//------------------------
