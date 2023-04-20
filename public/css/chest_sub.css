@@ -8,13 +8,13 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
 @import '_header.css';
 
-//------------------------
+/*-------------------------*/
 body{
   font-family: 'pretendard'; color:#383838; overflow-x: hidden;
 }
 .body-wrap { position: relative; min-height: 100vh; }
 
-//------------------------
+/*-------------------------*/
 
 .page-back-color{
   display: block; position: fixed; width: 100vw; height:100vh;
@@ -30,7 +30,7 @@ body{
   }
 }
 
-//------------------------
+/*-------------------------*/
 .section-big-card {
   position: relative; height:100vh; top:120px; display: flex; align-items: center;
   overflow:hidden;
@@ -61,7 +61,6 @@ body{
   .image-wrap {
     position: absolute; width: 640px; height:640px; top:0; left:0;
     overflow: hidden; 
-    // display: flex; justify-content: center; align-items: center;
     .card-image {
       position: absolute; width:640px; height: 100%;
       background-size: cover; background-repeat: no-repeat;
@@ -139,7 +138,7 @@ body{
   }
 }
 
-//------------------------
+/*-------------------------*/
 
 .section-current {
   position: relative; height:auto; display: flex; align-items: center;
@@ -180,7 +179,7 @@ body{
   }
 }
 
-//------------------------
+/*-------------------------*/
 
 .section-fin {
   position: relative; width: 100%; min-height: 100vh;

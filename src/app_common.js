@@ -5,14 +5,17 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
-navCommon();
+window.addEventListener('load',()=>{
+  navCommon();
+});
 
 function navCommon() {
     const bodyWrap = document.querySelector('.body-wrap');
     const header = document.querySelector('.header-wrap');
     const btnScrollTop = document.querySelector('.btn-page-top');
     const footer = document.querySelector('.footer');
-    const bottomBar = document.querySelector('.bottom-bar');
+    const bottomBar = document.querySelector('.bottom-bar-wrap');
+    const articleWrap = document.querySelector('.article-wrap');
 
   let pageScroll = ScrollTrigger.create({
     trigger:bodyWrap,
@@ -32,12 +35,16 @@ function navCommon() {
         header.style.top = '-100px';
         if(document.body.contains(bottomBar)){
           bottomBar.classList.add('show');
+          if(window.scrollY > (articleWrap.offsetHeight-window.innerHeight)){
+            bottomBar.classList.remove('show');
+          }
         }
       }else if(self.direction === -1){
         if(document.body.contains(bottomBar)){
           bottomBar.classList.remove('show');
         }
       }
+      
       if(window.scrollY >= 200){
         btnScrollTop.style.opacity = '1';
       }else {
@@ -46,9 +53,8 @@ function navCommon() {
       if(window.scrollY > (bodyWrap.offsetHeight - window.innerHeight*1.075)){
         btnScrollTop.style.bottom = `${footer.offsetHeight + 40}` + 'px';
       }else {
-        btnScrollTop.style.bottom = '30px';
-      }
-      
+        btnScrollTop.style.bottom = '16px';
+      }    
     }
   });
 

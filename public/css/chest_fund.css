@@ -8,17 +8,17 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
 @import '_header.css';
 
-//------------------------
+/*-------------------------*/
 body{
   font-family: 'pretendard'; color:#383838; overflow-x: hidden;
 }
 .body-wrap { position: relative; min-height: 100vh; }
 
-//------------------------
+/*-------------------------*/
 
 .iframe { width:100vw; min-height: 100vh; }
 
-//------------------------
+/*-------------------------*/
 
 .bottom-bar-wrap {
   position: sticky; bottom: 0; width:100%; 

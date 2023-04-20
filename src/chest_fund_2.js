@@ -55,9 +55,7 @@ function navCommon() {
         header.style.top = '-100px';
         if(document.body.contains(bottomBar)){
           bottomBar.classList.add('show');
-          if(window.scrollY > (articleWrap.offsetHeight-window.innerHeight)){
-            bottomBar.classList.remove('show');
-          }
+         
         }
       }else if(self.direction === -1){
         if(document.body.contains(bottomBar)){

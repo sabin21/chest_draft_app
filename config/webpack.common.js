@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const webpack = require('webpack');
 const paths = require('./paths')
 const pages = [
-  "chest_sub","chest_fund_1",
+  "chest_sub","chest_fund_1","chest_fund_2",
 ]
 
 module.exports = {

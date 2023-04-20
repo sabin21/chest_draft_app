@@ -1,4 +1,4 @@
-import '../public/css/chest_sub.css';
+import '../public/css/chest_sub.scss';
 import { gsap, Power3 } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
@@ -48,7 +48,7 @@ function horizontalScroll(){
  
   let wrap2 = document.querySelector(".pin-wrap2");
   let wrapWidth2 = wrap2.offsetWidth;
-  let horizontalScrollLength2 = wrapWidth2 - window.innerWidth;
+  let horizontalScrollLength2 = wrapWidth2 - window.innerWidth*0.5;
 
   gsap.to(wrap2, {
     scrollTrigger: {
@@ -58,22 +58,23 @@ function horizontalScroll(){
       start: "top top"
     },
     x: -horizontalScrollLength2,
-    // x: -1000,
     ease: "none"
   });
  
 }
 
 //--------------------------
-
-navCommon();
+window.addEventListener('load',()=>{
+  navCommon();
+});
 
 function navCommon() {
     const bodyWrap = document.querySelector('.body-wrap');
     const header = document.querySelector('.header-wrap');
     const btnScrollTop = document.querySelector('.btn-page-top');
     const footer = document.querySelector('.footer');
-    const bottomBar = document.querySelector('.bottom-bar');
+    const bottomBar = document.querySelector('.bottom-bar-wrap');
+    const articleWrap = document.querySelector('.article-wrap');
 
   let pageScroll = ScrollTrigger.create({
     trigger:bodyWrap,
@@ -93,12 +94,16 @@ function navCommon() {
         header.style.top = '-100px';
         if(document.body.contains(bottomBar)){
           bottomBar.classList.add('show');
+          if(window.scrollY > (articleWrap.offsetHeight-window.innerHeight)){
+            bottomBar.classList.remove('show');
+          }
         }
       }else if(self.direction === -1){
         if(document.body.contains(bottomBar)){
           bottomBar.classList.remove('show');
         }
       }
+      
       if(window.scrollY >= 200){
         btnScrollTop.style.opacity = '1';
       }else {
@@ -107,9 +112,8 @@ function navCommon() {
       if(window.scrollY > (bodyWrap.offsetHeight - window.innerHeight*1.075)){
         btnScrollTop.style.bottom = `${footer.offsetHeight + 40}` + 'px';
       }else {
-        btnScrollTop.style.bottom = '30px';
-      }
-      
+        btnScrollTop.style.bottom = '16px';
+      }    
     }
   });
 
@@ -130,6 +134,7 @@ function navCommon() {
   });
 
 }
+
 
 //-----------------
 
